@@ -234,3 +234,42 @@ footer {
   color: #38bdf8;
 }
 
+/* Make cards hover to look clickable */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+/* Make entire card clickable */
+.card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+/* Project page styling */
+.project-detail {
+  padding: 60px 0;
+}
+
+.project-detail .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-detail .project-description {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.project-detail .button-group {
+  margin-top: 20px;
+}
