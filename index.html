@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">Mason Price</div>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Mason Price</div>
+
+      <div class="nav-right">
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="#team">Team Project</a>
@@ -18,136 +21,108 @@
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-      </nav>
+
+        <!-- DARK MODE BUTTON -->
+        <button id="themeToggle">🌙</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="featured-label">Featured Project</div>
+
+      <h1>Mason Price</h1>
+      <h2>Full-Stack Developer | Practical Web Applications</h2>
+
+      <!-- FEATURED = BEST PROJECT -->
+      <div class="project-box">
+        <h3>Solo Project 3</h3>
+        <p>
+          A full-stack web application I built independently that handles dynamic user interactions and backend data processing.
+          It demonstrates my ability to design, build, and deploy a complete system.
+          One key decision was structuring the frontend to update dynamically without refreshing, improving usability.
+        </p>
+
+        <div class="button-group">
+          <a href="https://cpsc3750soloproject3-1.onrender.com/index.html" target="_blank" class="btn btn-primary">View Live App</a>
+          <a href="https://github.com/MasonPrice813/CPSC3750SoloProject3/tree/main" target="_blank" class="btn btn-secondary">See the Code</a>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
+<!-- TEAM PROJECT -->
+<section class="projects" id="team">
+  <div class="container">
+    <h2 class="section-title">Team Project</h2>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <div class="featured-label">Featured Project</div>
-          <h1>Mason Price</h1>
-          <h2>Full-Stack Developer | Practical Web Applications</h2>
+    <div class="card-grid">
 
-          <!-- 🔥 BACK TO ORIGINAL FEATURED PROJECT -->
-          <div class="project-box">
-            <h3>Featured Project: Team Project Phase 2</h3>
-            <p>
-              The final phase of my team project, showing a more complete and polished
-              application built through multiple stages of development.
-            </p>
-            <div class="button-group">
-              <a href="https://cpsc3750phase2.onrender.com/client.html" target="_blank" class="btn btn-primary">View Live App</a>
-              <a href="https://github.com/MasonPrice813/CPSC3750Phase2" target="_blank" class="btn btn-secondary">See the Code</a>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <a href="phase1.html">
+          <h3>Phase 1</h3>
+          <p>Built the initial structure and API foundation for the Battleship game.</p>
+        </a>
       </div>
-    </section>
 
-    <!-- TEAM PROJECT -->
-    <section class="projects" id="team">
-      <div class="container">
-        <h2 class="section-title">Team Project (Phases)</h2>
-        <p>
-          This portfolio currently features my team project because it best represents
-          the work I am building and improving over time. The project is being developed
-          in phases so each version can show clear progress from the first foundation
-          to a more complete application.
-        </p>
-
-        <div class="card-grid">
-
-          <!-- ORIGINAL TEXT KEPT -->
-          <div class="card">
-            <a href="phase1.html">
-              <h3>Phase 1</h3>
-              <p>
-                Static foundation with the main structure, layout, and core user flow of
-                the application.
-              </p>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="phase2.html">
-              <h3>Phase 2</h3>
-              <p>Interactive gameplay with real-time updates using polling.</p>
-            </a>
-          </div>
-
-          <div class="card">
-            <a href="phase3.html">
-              <h3>Phase 3</h3>
-              <p>
-                Phase 3 is currently in development. This phase will focus on completing
-                the multiplayer experience, improving game state handling, and refining
-                the overall user interface based on testing from Phase 2.
-              </p>
-            </a>
-          </div>
-
-        </div>
+      <div class="card">
+        <a href="phase2.html">
+          <h3>Phase 2</h3>
+          <p>Added interactive gameplay with real-time updates using polling.</p>
+        </a>
       </div>
-    </section>
 
-    <!-- SOLO PROJECT -->
-    <section class="projects" id="solo">
-      <div class="container">
-        <h2 class="section-title">Solo Project</h2>
-        <p>
-          This project highlights my ability to independently design, build,
-          and deploy a complete full-stack application.
-        </p>
-
-        <div class="card-grid">
-          <div class="card">
-            <a href="solo3.html">
-              <h3>Solo Project 3</h3>
-              <p>
-                A fully deployed web application built independently, showcasing backend
-                integration, dynamic functionality, and a complete user interface.
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          Hi, I’m Mason Price. I’m a full-stack developer with an interest in building
-          practical software that is clear, functional, and useful.
-        </p>
-        <p>
-          I enjoy creating web applications, solving technical problems, and improving
-          projects from their first version into stronger finished products.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: <a href="mailto:masonprice2004@gmail.com">masonprice2004@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/masonprice813" target="_blank">github.com/masonprice813</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mason-price-334580274" target="_blank">linkedin.com/in/mason-price-334580274</a></p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Mason Price. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- SOLO -->
+<section class="projects" id="solo">
+  <div class="container">
+    <h2 class="section-title">Solo Project</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <a href="solo3.html">
+          <h3>Solo Project 3</h3>
+          <p>Fully deployed full-stack app built independently.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>I build practical web applications with a focus on usability and clean functionality.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: masonprice2004@gmail.com</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+toggle.onclick = () => {
+  document.body.classList.toggle("light-mode");
+  toggle.textContent =
+    document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+};
+</script>
+
 </body>
 </html>
