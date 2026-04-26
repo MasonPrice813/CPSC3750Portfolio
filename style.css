@@ -275,27 +275,79 @@ footer {
 }
 
 
-/* LIGHT MODE */
+/* =========================
+   LIGHT MODE (FIXED)
+========================= */
+
 .light-mode {
-  background-color: #ffffff;
+  background-color: #f8fafc;
   color: #0f172a;
 }
 
+/* Header + Footer */
+.light-mode header,
+.light-mode footer {
+  background-color: #ffffff;
+  border-color: rgba(0,0,0,0.08);
+}
+
+/* Cards + Boxes */
 .light-mode .project-box,
 .light-mode .card {
-  background: #f1f5f9;
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Text */
+.light-mode p,
+.light-mode .project-description {
+  color: #334155;
+}
+
+/* Headings */
+.light-mode h1,
+.light-mode h2,
+.light-mode h3 {
   color: #0f172a;
 }
 
+/* Nav */
 .light-mode .nav-links a {
   color: #0f172a;
 }
 
+.light-mode .nav-links a:hover {
+  color: #0ea5e9;
+}
+
+/* Logo */
 .light-mode .logo {
   color: #0ea5e9;
 }
 
-/* TOGGLE BUTTON */
+/* Buttons */
+.light-mode .btn-primary {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.light-mode .btn-secondary {
+  border: 1px solid #0ea5e9;
+  color: #0ea5e9;
+}
+
+.light-mode .btn-secondary:hover {
+  background-color: rgba(14,165,233,0.1);
+}
+
+/* Featured label */
+.light-mode .featured-label {
+  background-color: #e2e8f0;
+  color: #0ea5e9;
+}
+
+/* Toggle button */
 #themeToggle {
   background: none;
   border: 1px solid #38bdf8;
@@ -303,11 +355,4 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   color: #38bdf8;
-}
-
-/* NAV RIGHT SIDE */
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
 }
