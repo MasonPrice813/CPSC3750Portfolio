@@ -35,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 15px;
 }
 
@@ -45,10 +45,17 @@ nav {
   color: #38bdf8;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap; /* prevents wrapping */
+}
+
 .nav-links {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
@@ -276,25 +283,25 @@ footer {
 
 
 /* =========================
-   LIGHT MODE (FIXED)
+   LIGHT MODE (SOFT GRAY)
 ========================= */
 
 .light-mode {
-  background-color: #f8fafc;
+  background-color: #e5e7eb; /* light gray instead of white */
   color: #0f172a;
 }
 
 /* Header + Footer */
 .light-mode header,
 .light-mode footer {
-  background-color: #ffffff;
+  background-color: #f1f5f9;
   border-color: rgba(0,0,0,0.08);
 }
 
 /* Cards + Boxes */
 .light-mode .project-box,
 .light-mode .card {
-  background: #ffffff;
+  background: #f8fafc;
   color: #0f172a;
   border: 1px solid rgba(0,0,0,0.08);
 }
@@ -345,14 +352,4 @@ footer {
 .light-mode .featured-label {
   background-color: #e2e8f0;
   color: #0ea5e9;
-}
-
-/* Toggle button */
-#themeToggle {
-  background: none;
-  border: 1px solid #38bdf8;
-  padding: 6px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  color: #38bdf8;
 }
